@@ -1,0 +1,8 @@
+Employer:
+  - id int
+  - name String
+  - employees List<Employee>
+
+Employee:
+  - id int
+  - name String

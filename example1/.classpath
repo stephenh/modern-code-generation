@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/classes" path="src/main/java"/>
+	<classpathentry kind="src" path="src/codegen/java"/>
+	<classpathentry kind="src" path="target/gen-java-src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/joist-util-0.8.1.jar" sourcepath="lib/joist-util-0.8.1-sources.jar"/>
+	<classpathentry kind="lib" path="lib/snakeyaml-1.8.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-api-1.6.1.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

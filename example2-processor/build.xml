@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<project name="example2-processor" default="compile">
+
+	<target name="annotations" depends="compile" description="jar only the annotations into the examples project">
+		<jar destfile="bin/annotations.jar">
+			<fileset dir="bin/main" includes="example2/*.class"/>
+		</jar>
+		<copy file="bin/annotations.jar" todir="../example2-examples/lib"/>
+	</target>
+
+	<target name="compile">
+		<mkdir dir="bin/main"/>
+		<javac srcdir="src" destdir="bin/main" debug="true" nowarn="yes" source="1.6" target="1.6" encoding="utf8">
+			<classpath>
+				<fileset dir="lib" includes="*.jar"/>
+			</classpath>
+		</javac>
+	</target>
+
+</project>
+
